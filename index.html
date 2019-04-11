@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Hogs</title>
+
+    <style media="screen">
+       body {
+      font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+      font-weight: 300;
+      }
+
+      h1{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      }
+
+      #container {
+        width:1279px;
+        margin:auto;
+        margin-top:50px;
+      }
+
+      #form{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      }
+      
+      .hog-card{
+        float:left;
+        width:393px;
+        height: 555px;
+        background-color: pink;
+        color: #000080;
+        margin:15px;
+        text-align: center;
+      }
+      .center-text {
+        text-align: center;
+      }
+    </style>
+    <script defer type="text/javascript" src="src/index.js"></script>
+    <script defer type="text/javascript" src="src/hog.js"></script>
+  </head>
+  <body>
+    <h1>Hog Farm</h1>
+    <div id="container">
+      <div id="form">
+        <h3>New Hog</h3>
+        <form id="hog-form">
+          <input id="form-name"type="text" name="name" placeholder="name"/>
+          <br/>
+          <input id="form-specialty" type="text" name="specialty" placeholder="specialty"/>
+          <br/>
+          <input id="form-medal" type="text" name="medal" placeholder="medal"/>
+          <br/>
+          <input id="form-weight" type="text" name="weight" placeholder="weight"/>
+          <br/>
+          <input id="form-img" type="text" name="img" placeholder="img url"/>
+          <br/>
+          <span>greased: <input type="checkbox" name="greased" value="greased"></span>
+          <br/>
+          <input type="submit" value="Submit"/>
+        </form>
+      </div>
+      <div id="hog-container">
+      </div>
+    </div>
+  </body>
+  
+</html>
